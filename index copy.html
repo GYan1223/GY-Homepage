@@ -1,0 +1,159 @@
+/* index.html */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYan - Academic Homepage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="publications.html">Publications</a>
+                <a href="team.html">Team</a>
+                <a href="project.html">Project</a>
+                <a href="activities.html">Activities</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="profile-section">
+            <div class="profile-image">
+                <img src="../images/me.jpg" alt="Your Name">
+                <div class="social-links">
+                    <a href="#" class="social-link email" onclick="showEmail(event)">
+                       <i class="fas fa-envelope"></i>
+                       Personal Email<span style="display:none">gangyan58@gmail.com</span>
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=wyHzGcgAAAAJ&hl=zh-CN" class="social-link google-scholar">
+                        <i class="fas fa-graduation-cap"></i>
+                        Google Scholar
+                    </a>
+                    <a href="https://www.linkedin.com/in/gang-yan-4b7622212/" class="social-link linkedin">
+                        <i class="fab fa-linkedin"></i>
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+            <div class="profile-content">
+                <h1>Gang Yan (燕刚)</h1>
+                <p>Postdoc Scholar</p>
+                <p>Department of Computer Science and Engineering</p>
+                <p>University of California, Merced</p>
+                
+                <div class="contact-info">
+                    <p>📧 Email: gyan5@ucmerced.edu</p>
+                    <!-- <p>📍 Office: S&E 2, 230V</p> -->
+                    <p>📞 Phone: +1 (607)232-4285</p>
+                </div>
+
+                <!-- <h2>About Me</h2>
+                <p>Your detailed introduction goes here. Describe your research interests, current work, and academic background.
+                </p>
+                -->
+
+                <h2>Research Interests</h2>
+                <p>
+                    My research centers on high-performance network optimization, cloud and edge computing, distributed machine learning, and federated learning. A key focus is addressing security challenges in distributed systems, with an emphasis on designing robust attack mitigation and defense strategies. I strive to advance the efficiency, scalability, and resilience of modern computing infrastructures through innovative and interdisciplinary approaches.
+                </p>
+
+                <h2>Education Experience</h2>
+                <ul>
+                    <li>Ph.D. in Electrical & Computer Engineering, <a href="https://www.binghamton.edu/" target="_blank">SUNY-Binghamton University</a>, 2023<br>
+                        <em>
+                            Advisor: <a href="https://www.baidu.com" target="_blank">Prof. Jian Li</a>;
+                            Co-advisor: <a href="https://www.baidu.com" target="_blank">Prof. Hao Wang</a>,
+                                        <a href="https://www.baidu.com" target="_blank">Prof. Xu Yuan</a>
+                        </em>
+                    </li>
+                    <li>M.S. in Statistics, <a href="https://stat.nankai.edu.cn" target="_blank">Nankai University</a>, 2019<br>
+                        <em>
+                            Advisor: <a href="https://www.baidu.com" target="_blank">Prof. Changliang Zou</a>;
+                            Co-advisor: <a href="https://www.baidu.com" target="_blank">Prof. Zhaojun Wang</a>
+                        </em>
+                    </li>
+                    <li>B.S. in Statistics, <a href="https://math.nankai.edu.cn/" target="_blank">Nankai University</a>, 2016<br>
+                    </li>
+                </ul>
+
+                
+                <h2>Work Experience</h2>
+                <ul>
+                    <li>Postdoc Scholar, <a href="https://www.ucmerced.edu/" target="_blank">University of California, Merced</a>, 01/2024-Present<br>
+                        <em>
+                            Advisor: <a href="https://www.baidu.com" target="_blank">Prof. Wan Du</a>
+                        </em>
+                    </li>
+                    <li>Technical Researcher, <a href="https://about.att.com/sites/labs" target="_blank">Shannon Lab (AT&T Labs, Inc.)</a>, 06/2023-08/2023<br>
+                        <em>
+                            Mentor: <a href="https://scholar.google.com/citations?user=QZCoVc8AAAAJ&hl=en" target="_blank">Rakesh K. Sinha,</a>
+                        </em>
+                    </li>
+                </ul>
+
+                <h2>Recent News</h2>
+                    <div class="news-item">
+                        <p><strong>[November 2024]</strong> <span class="category-service">[Service]</span> I will serve as the heavy Program Committee for USENIX ATC 2025.</p>
+                    </div>
+                    <div class="news-item">
+                        <p><strong>[August 2024]</strong> <span class="category-news">[News]</span> Congratulations to my PhD advisor, Prof. Jian Li, on receiving the prestigious NSF CAREER Award!</p>
+                    </div>
+                    <div class="news-item">
+                        <p><strong>[August 2024]</strong> <span class="category-paper">[Paper]</span> Our paper "Straggler-Resilient Decentralized Learning via Adaptive Asynchronous Update" accepted to MobiHoc 2024.</p>
+                    </div>
+                    <div class="news-item">
+                        <p><strong>[June 2024]</strong> <span class="category-paper">[Paper]</span> Our paper "Enhancing Model Poisoning Attacks to Byzantine-Robust Federated Learning via Critical Learning Periods" accepted to RAID 2024.</p>
+                    </div>
+                    <div class="news-item">
+                        <p><strong>[June 2024]</strong> <span class="category-service">[Service]</span> I will serve as a Program Committee (PC) member for AAAI 2025.</p>
+                    </div>
+                    <div class="news-item">
+                        <p><strong>[May 2024]</strong> <span class="category-paper">[Paper]</span> Our paper "FedRoLA: Robust Federated Learning Against Model Poisoning via Layer-based Aggregation" accepted to ACM KDD 2024 (acceptance rate: 20%).</p>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    
+    <script>
+        function showEmail(event) {
+          event.preventDefault(); // 阻止默认的链接点击行为  
+          var emailLink = event.target.closest('a');
+          var hiddenPart = emailLink.querySelector('span').textContent;
+          var fullEmail = hiddenPart;
+          alert('My personal email address is: ' + fullEmail);
+        }
+    </script>
+    
+    <style>
+    .category-service {
+        color: #007BFF; /* Blue for service-related items */
+    }
+    .category-paper {
+        color: #28A745; /* Green for paper announcements */
+    }
+    .category-news {
+        color: #FFC107; /* Yellow for general news updates */
+    }
+    .category-other {
+        color: #6C757D; /* Gray for any other categories */
+    }
+    </style>
+    
+    
+    <div class="container">
+        <!-- 其他内容 -->
+    </div>
+
+    <footer class="copyright">
+        &copy; 2024 Gang Yan, University of California Merced
+    </footer>
+    
+</body>
+</html>
