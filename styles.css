@@ -1,0 +1,133 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand {
+    font-size: 1.5em;
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #0056b3;
+}
+
+/* Profile Section */
+.profile-section {
+    display: flex;
+    gap: 40px;
+    margin: 40px 0;
+    align-items: flex-start;
+}
+
+.profile-image {
+    flex-shrink: 0;
+    width: 300px;
+}
+
+.profile-image img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.profile-content {
+    flex-grow: 1;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9em;
+    transition: transform 0.2s;
+}
+
+.social-link i {
+    margin-right: 8px;
+}
+
+.social-link:hover {
+    transform: translateY(-2px);
+}
+
+.google-scholar { background-color: #4285f4; }
+.linkedin { background-color: #0077b5; }
+.researchgate { background-color: #00ccbb; }
+.github { background-color: #333; }
+
+/* Publications */
+.publication {
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.publication:hover {
+    transform: translateX(5px);
+}
+
+.pub-links {
+    margin-top: 10px;
+}
+
+.pub-links a {
+    margin-right: 15px;
+    color: #0056b3;
+    text-decoration: none;
+}
