@@ -1,59 +1,47 @@
-/* Team */
-.team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 30px;
-    margin: 30px 0;
-}
+/* team.html */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Team - Your Name</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-brand">Your Name</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="publications.html">Publications</a>
+                <a href="team.html">Team</a>
+                <a href="activities.html">Activities</a>
+            </div>
+        </div>
+    </nav>
 
-.team-member {
-    background-color: #f8f9fa;
-    border-radius: 5px;
-    overflow: hidden;
-    transition: transform 0.2s;
-}
+    <div class="container">
+        <h1>Research Team</h1>
 
-.team-member:hover {
-    transform: translateY(-5px);
-}
+        <h2>Current Members</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="member1.jpg" alt="Member Name" class="member-image">
+                <div class="member-info">
+                    <h3>Member Name</h3>
+                    <p>Position</p>
+                    <p>Research Focus: Description</p>
+                    <p>Email: email@university.edu</p>
+                </div>
+            </div>
+            <!-- Add more team members here -->
+        </div>
 
-.member-image {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
-
-.member-info {
-    padding: 20px;
-}
-
-/* Activities */
-.activity {
-    margin-bottom: 25px;
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-radius: 5px;
-}
-
-.news-item {
-    margin-bottom: 20px;
-    padding-left: 20px;
-    border-left: 3px solid #0056b3;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .profile-section {
-        flex-direction: column;
-    }
-    
-    .profile-image {
-        width: 100%;
-        max-width: 300px;
-        margin: 0 auto;
-    }
-    
-    .social-links {
-        flex-wrap: wrap;
-    }
-}
+        <h2>Alumni</h2>
+        <div class="team-grid">
+            <!-- Add alumni here -->
+        </div>
+    </div>
+</body>
+</html>
