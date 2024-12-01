@@ -163,6 +163,10 @@ body {
 /* .researchgate { background-color: #00ccbb; } */
 /* .github { background-color: #333; } */
 
+.flag-counter {
+    display: none; /* 隐藏 FlagCounter */
+}
+
 /* Publications */
 .publication {
     margin-bottom: 25px;
